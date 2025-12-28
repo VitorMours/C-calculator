@@ -9,7 +9,8 @@
  * linux operation system
  * */
 
-
+// Registering the functions to be called
+//
 void show_options();
 void clear_terminal();
 
