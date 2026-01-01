@@ -1,9 +1,17 @@
-main: 
+TARGET = build/main
+SRC = src/main.c src/calculator.c
+
+
+main: src/main.c 
 	
 	@echo "Creating the builded binary folder"
 	mkdir -p "build/"
 	@echo "compiling the program"
 	@sleep 1
 
-	cc src/main.c -o build/main
-	@./build/main
+	cc ${SRC} -o ${TARGET}
+	@echo "Compilation Successful!"
+	@./${TARGET}
+
+clean: 
+	rm -rf build/

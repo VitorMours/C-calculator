@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "calculator.c"
+#include "../include/calculator.h"
 
 /*
  * Program: Terminal Calculator
@@ -51,12 +51,15 @@ void show_options(){
 void receive_choice(){
 
   char buffer[4];
-  
+  float result;
   printf("\nDigite a  sua escolha: ");
 
   // fgets(onde_salvar, tamanho_maximo, de_onde_ler)
   if(fgets(buffer, sizeof(buffer), stdin) != NULL){
-    start_calculator(buffer);
+
+    // TODO: Vou precisar tambem passar o valor do fgets para dentro da funcao para resultar o valor
+    result = start_calculator(buffer);
   }
+  printf("\nO resultado achado foi: %f\n", result);
 }
 
