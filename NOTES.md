@@ -1,8 +1,29 @@
-# Receiving IO data from the user
+# Entrada de IO de Forma segura
 
 
-When receiving data from the user in the terminal, we need to have in the safest 
-way we can do, because we can assume that the user does not gonna know how to 
-correctly use our system, and how to communicate with the system. For this, we can use 
-the fgets function, because provides the most save way to receive the data input from the 
-user, and prevent for errors like buffer overflow from happen
+
+# Atof
+Quando vamos lidar com valores flutuantes dentro da linguagem C, mas recebemos
+o valor como uma string, ou como um caractere ASCII mais precisamente falando,
+precisamos que esse valor seja convertido, e convenientemente a linguagem C
+já possui uma função que consegue, e pode ser responsável por isso, sendo a 
+função `atof()`, essa função literalmente significa `ASCII to Float`,  ou seja,
+transformar um valor de ascii em float de forma que ele consiga ser usado 
+numericamente, como mostrado dentro do nosso código e dentro do seguinte exemplo:
+
+
+```C
+char b_char[10];
+float b = 0;
+
+if(fgets(b_char, sizeof(b_char), stdin) != NULL){
+    b = atof(b_char);
+}
+```
+
+# _WIN32 e _WIN64
+
+
+
+
+# Importando declarações e não implementações

@@ -13,3 +13,6 @@
 
 Esse projeto tem como intuito aprender fundamentos da linguagem C, por meio de um programa de terminal, que simula uma calculadora, e trabalha
 com modularização de funções, de forma a permitir que as funções sejam organizadas em outro arquivo de maneira mais fácil de serem utilzadas.
+Além disso, traz algumas anotações auxiliares com o intuito de ensinar e constatar alguns conceitos interessantes da linguagem C que foram aprendidos com esse projeto.
+
+# Como Rodar o projeto
