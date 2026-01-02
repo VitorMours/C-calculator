@@ -1,6 +1,18 @@
 # Entrada de IO de Forma segura
+Lidando com entrada de usuário, podemos ter vários tipos de problema o qualdevemos no blindar, como buffer overflow e leituras em branco. Com isso, temos que atualmente o método mais seguro de fazer a entrada de dados por 
+um usuário, seria por meio do `fgets`, que é um metodo nativo da linguagem C.
+
+Temos que comparado ao `gets` por exemplo, ele é mais seguro porque o gets 
+espera encontrar uma quebra de linha para que sua entrada seja finalizada, de 
+forma que pode gerar diversos tipos de problemas dentro dos nossos sistemas.
+
+Com isso, temos que a maneira mais segura, seria usar o fgets, pois ele necessita que especifiquemos o tamanho do input que desejamos, e precisamos especificar que ele somente será atribuído, se o valor preencher um conjunto de normativas que são verificadas por meio de variáveis condicionais booleanas
 
 
+```C
+// Vai preencher essa variavel com o valor dela por meio do stdin, e nao pode ser vazio
+if(fgets(b_char, sizeof(b_char), stdin) != NULL){}
+```
 
 # Atof
 Quando vamos lidar com valores flutuantes dentro da linguagem C, mas recebemos
