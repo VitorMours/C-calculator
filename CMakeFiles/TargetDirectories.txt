@@ -1,0 +1,3 @@
+/home/vmoura/Code/learning/C/calculator/CMakeFiles/main.dir
+/home/vmoura/Code/learning/C/calculator/CMakeFiles/edit_cache.dir
+/home/vmoura/Code/learning/C/calculator/CMakeFiles/rebuild_cache.dir

@@ -16,3 +16,15 @@ com modularização de funções, de forma a permitir que as funções sejam org
 Além disso, traz algumas anotações auxiliares com o intuito de ensinar e constatar alguns conceitos interessantes da linguagem C que foram aprendidos com esse projeto.
 
 # Como Rodar o projeto
+
+Para rodar o projeto, a ferramentade build usada seria o **CMake**, com isso, temos que os comandos de build, e de execução, seriam:
+
+
+```bash
+
+cmake --build build
+
+./build/main
+
+
+```

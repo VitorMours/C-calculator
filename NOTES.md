@@ -35,7 +35,9 @@ if(fgets(b_char, sizeof(b_char), stdin) != NULL){
 
 # _WIN32 e _WIN64
 
+Temos que essa flags que estamos usando são usadas para determinar que sistema operacional está sendo usando dentro do nosso sistema. Esse tipo de flag permite que 
+como dentro do programa, executemos comandos do próprio sistema operacional, de forma a facilitar a forma como podemos manipular elementos do sistema, e do terminal por exemplo.
+Nesse caso, temos que foi adicionado o processo de limpeza do terminal quando usamos essa flag para saber se usaríamos o comando presente em sistemas windows, ou o comando usado
+em sistemas UNIX
 
 
-
-# Importando declarações e não implementações
